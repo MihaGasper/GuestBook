@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Popravi svoje podatke</h1>
+    <form method="post" action="/sporocilo/{{ sporocilo.key.id() }}/uredi">
+        <input name="novime" placeholder="Ime in priimek" value="{{ sporocilo.name }}">
+        <input name="novmail" placeholder="Email" value="{{ sporocilo.mail }}">
+        <input name="novtext" placeholder="Sporocilo" value="{{ sporocilo.text}}">
+        <button type="submit">Poslji</button>
+    </form>
+</body>
+</html>

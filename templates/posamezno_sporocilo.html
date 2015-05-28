@@ -12,5 +12,12 @@
     <p>Email: {{ sporocilo.mail }}</p>
     <p>Vase sporocilo: {{ sporocilo.text }}</p>
     <p>Ustvarjeno: {{ sporocilo.created }}</p>
+
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/uredi">Uredi</a>
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/izbrisi">Izbrisi</a>
+    <a href="/rezultat">rezultat</a>
+    <a href="/">hello</a>
+    <a href="/seznam">seznam</a>
+
 </body>
 </html>
